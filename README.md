@@ -2,7 +2,7 @@
 
 This is a demo project for API development in Django using BDD approach
 
-####Project directory structure
+#### Project directory structure
 
 ```
 .
