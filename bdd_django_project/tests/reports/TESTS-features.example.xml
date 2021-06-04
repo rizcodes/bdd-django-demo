@@ -1,0 +1,30 @@
+<testsuite name="features.example.Test REST API" tests="2" errors="0" failures="0" skipped="0" time="0.01" timestamp="2021-06-04T18:47:41.113145" hostname="zyrix"><testcase classname="features.example.Test REST API" name="Base url validation" status="passed" time="0.00401"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Base url validation
+    Given I set sample API url ... passed in 0.000s
+    When Send GET HTTP request to api url ... passed in 0.004s
+    Then I received valid HTTP response code 200 ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.example.Test REST API" name="GET users API validation" status="passed" time="0.00599"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: GET users API validation
+    Given I set sample API url ... passed in 0.000s
+    Given I set GET api endpoint as "api/v1/users" ... passed in 0.000s
+    When I send GET HTTP request ... passed in 0.006s
+    Then I receive valid HTTP response code 200 ... passed in 0.000s
+    And Response BODY is not-empty ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+http://127.0.0.1:8000/api/v1/users
+GET response - {users: [Zoe,Aygul,Gokce]}
+
+]]>
+</system-out></testcase></testsuite>
